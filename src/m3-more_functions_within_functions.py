@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# Done: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -27,9 +27,27 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def add(num1, num2):
+    formula_A = num1 + num2
+    return formula_A
+    
+def subtract(num1, num2):
+    formula_B = num1 - num2
+    return formula_B
 
+def multiply(num1, num2):
+    formula_C = num1 * num2
+    return formula_C
+
+def divide(num1, num2):
+    formula_D = num1 / num2
+    return formula_D
+
+def power(num1, num2):
+    formula_E = pow(num1, num2)
+    return formula_E
 ###############################################################################
-# TODO: 2. (8 pts)
+# Done: 2. (8 pts)
 #
 #   Now we need a function that will act as the control unit. It will ask the
 #   user for inputs and call the math functions.
@@ -59,9 +77,21 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+    print('Welcome back')
+    num1 = float(input('Please input first number: '))
+    num2 = float(input('Please input second number: '))
+    formula_A = add(num1, num2)
+    formula_B = subtract(num1, num2)
+    formula_C = multiply(num1, num2)
+    formula_D = divide(num1, num2)
+    formula_E = pow(num1, num2)
+    print(f'Add: {formula_A}\nSubtract: {formula_B}\nMultiply: {formula_C}\nDivide: {formula_D}\nPower: {formula_E}')
+    print('Goodbye')
 
+main()
 ###############################################################################
-# TODO: 3. EXTRA CREDIT (4 pts)
+# Done: 3. EXTRA CREDIT (4 pts)
 #
 #   For this _TODO_, do NOT write your code beneath it. You will be modifying
 #   your code above. This is extra credit, so you don't need to complete this

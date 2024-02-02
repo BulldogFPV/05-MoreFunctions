@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# Done: 1. (3 pts)
 #
 #   Arbitrary arguments may not be something that you end up using all that
 #   often and we may not use them often in this class, but I wanted to make
@@ -18,9 +18,11 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+def roll_call(*names):
+    print(f'List of names: {names}')
+roll_call('John', 'Isla', 'Peter', 'Ashley', 'Kaylee')
 ###############################################################################
-# TODO: 2. (3 pts)
+# Done: 2. (3 pts)
 #
 #   This time, let's create a function that uses arbitrary keyword arguments.
 #
@@ -36,3 +38,6 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def pet_bio(**info):
+    print(f'Pet Bio: {info}')
+pet_bio(name = 'Jaeger', age = '5 Years of Age', breed = 'German Shepherd')
